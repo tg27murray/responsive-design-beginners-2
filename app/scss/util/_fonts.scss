@@ -1,1 +1,11 @@
-$font: 'Open Sans', sans-serif;
+@font-face {
+  font-family: myFirstFont;
+  src: url('../../../fonts/SourceSansPro-Regular.ttf');
+}
+
+@font-face {
+  font-family: myFirstFont;
+  src: url('../../../fonts/SourceSansPro-Bold.ttf');
+  font-weight: bold;
+}
+$font: myFirstFont;

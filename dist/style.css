@@ -1,3 +1,12 @@
+@font-face {
+  font-family: myFirstFont;
+  src: url("../../../fonts/SourceSansPro-Regular.ttf");
+}
+@font-face {
+  font-family: myFirstFont;
+  src: url("../../../fonts/SourceSansPro-Bold.ttf");
+  font-weight: bold;
+}
 html {
   box-sizing: border-box;
   font-size: 100%;
@@ -12,18 +21,27 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: "Open Sans", sans-serif;
+  font-family: myFirstFont;
   background-color: var(--background-color);
   color: var(--text-color);
 }
 
 :root {
-  --background-color: hsl(0, 0%, 13%);
-  --text-color: hsl(0, 0%, 100%);
+  --moin-bg: hsl(0, 0%, 100%);
+  --text-dark: hsl(233, 14%, 25%);
+  --text-light: hsl(0, 0%, 100%);
+  --hero-bg: hsl(232, 58%, 55%);
+  --button-primary-bg: hsl(180, 100%, 42%);
+  --button-primary-text: hsl(233, 14%, 25%);
+  --button-secondary-bg: transparent;
+  --button-secondary-border: hsl(0, 0%, 100%);
+  --button-secondary-text: hsl(0, 0%, 100%);
+  --fullwidth-bg: hsl(320, 85%, 41%);
 }
 
 .green {
-  background-color: hsl(120, 100%, 27%);
+  background-color: var(--moin-bg);
+  background-color: black;
 }
 
 .magenta {
@@ -33,17 +51,23 @@ body {
 h1,
 h2,
 h3 {
-  font-weight: 800;
+  font-weight: 700;
   line-height: 1.1;
   margin-top: 0;
 }
 
 h1 {
-  font-size: clamp(1.75rem, 1rem + 2vw, 2.5rem);
+  font-size: 2.625rem;
+  font-size: clamp(2.625rem, 1.77rem + 3.649vw, 4.5rem);
 }
 
 h2 {
-  font-size: clamp(1.375rem, 0.875rem + 1.5vw, 2.25rem);
+  font-size: 1rem;
+  font-size: clamp(1rem, 1.91rem + 1.4545454545vw, 3rem);
+}
+
+h3 {
+  font-size: 1.5rem;
 }
 
 p {
@@ -57,37 +81,7 @@ a:active {
   text-decoration: none;
 }
 
-.grid {
-  display: grid;
-  gap: 2.5rem;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto auto;
+.wrapper {
+  width: min(100% - 3rem, 75rem);
   margin-inline: auto;
-  width: min(100%, 62.5rem);
-  font-size: 2rem;
-}
-@media (min-width: 56.25em) {
-  .grid {
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: auto;
-  }
-}
-.grid__main, .grid__sidebar {
-  padding: 2.5rem;
-}
-@media (min-width: 43.75em) {
-  .grid__main {
-    background-color: pink;
-  }
-}
-.grid__sidebar {
-  background-color: hsl(300, 100%, 30%);
-}
-@media (max-width: 56.24875em) {
-  .grid__sidebar {
-    text-align: center;
-  }
-}
-.grid__widget {
-  padding: 1rem;
 }/*# sourceMappingURL=style.css.map */
