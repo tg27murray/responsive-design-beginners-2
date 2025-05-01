@@ -3,14 +3,18 @@
   --text-dark: hsl(233, 14%, 25%);
   --text-light: hsl(0, 0%, 100%);
 
-  --header-bg: hsl(232, 58%, 55%);
-  --hero-bg: hsl(232, 58%, 55%);
-  --button-primary-bg: hsl(180, 100%, 42%);
-  --button-primary-text: hsl(233, 14%, 25%);
+  --header-bg: hsla(232, 58%, 55%, 1);
+  --hero-bg: hsla(232, 58%, 55%, 1);
+  --button-primary-bg: hsla(180, 100%, 42%, 1);
+  --button-primary-bg-hover: hsla(180, 100%, 37%, 1);
+  --button-primary-text: hsla(233, 14%, 25%, 1);
   --button-secondary-bg: transparent;
-  --button-secondary-border: hsl(0, 0%, 100%);
-  --button-secondary-text: hsl(0, 0%, 100%);
-  --fullwidth-bg: hsl(320, 85%, 41%);
+  --button-secondary-bg-hover: hsla(0, 0%, 100%, 1);
+
+  --button-secondary-border: hsla(0, 0%, 100%, 1);
+  --button-secondary-text: hsla(0, 0%, 100%, 1);
+  --button-secondary-text-hover: var(--hero-bg);
+  --fullwidth-bg: hsla(320, 85%, 41%, 1);
 }
 
 .green {
