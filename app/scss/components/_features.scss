@@ -2,42 +2,103 @@
 
 .features {
   &__wrapper {
-    // text-align: center;
     display: flex;
-    // flex-direction: column;
     flex-wrap: wrap;
-    gap: 40px;
     justify-content: center;
+    gap: 40px;
+
     @include u.breakpoint(large){
-      flex-wrap:nowrap;
       gap: 5.5%;
     }
+
   }
+
   &__item {
     text-align: center;
-    font-size: u.rem(18);
-    line-height: 1.3;
-    flex: 1;
     @include u.breakpoint(large){
-      text-align: left;
+      flex: 1;
+      text-align: start;
     }
   }
+
   &__icon {
-    width: auto;
     height: u.rem(48);
+
+    width: auto;
     margin-block-end: 10px;
-    // display: inline-block;to
     @include u.breakpoint-down(medium){
       margin-inline: auto;
     }
   }
+
   &__title {
-    // font-size: u.rem(24);
-    // line-height: 1;
     margin-block-end: u.rem(10);
   }
+
   &__description {
     margin-block-end: 0;
     max-width: 50ch;
   }
 }
+
+// .features {
+//   // &__wrapper {
+//   //   display: flex;
+//   //   flex-wrap: wrap;
+//   //   justify-content: center;
+//   //   gap: 40px 5.5%;
+
+//   // }
+//   // &__item {
+//   //   flex: 0 1 u.rem(346);
+//   //   text-align: center;
+//   //   @include u.breakpoint(large){
+//   //     text-align: start;
+//   //   }
+//   // }
+// // Flexbox --media queries
+//   &__wrapper {
+//     // text-align: center;
+//     display: flex;
+//     // flex-direction: column;
+//     flex-wrap: wrap;
+//     gap: 40px;
+//     justify-content: center;
+//     @include u.breakpoint(large){
+//       flex-wrap:nowrap;
+//       gap: 5.5%;
+//     }
+//   }
+//   &__item {
+//     text-align: center;
+//     font-size: u.rem(18);
+//     line-height: 1.3;
+//     flex: 1;
+//     @include u.breakpoint(large){
+//       text-align: left;
+//     }
+//   }
+
+
+
+//   &__icon {
+//     width: auto;
+//     height: u.rem(48);
+//     margin-block-end: 10px;
+//     // display: inline-block;to
+//     @include u.breakpoint-down(medium){
+//       margin-inline: auto;
+//     }
+//   }
+//   &__title {
+//     // font-size: u.rem(24);
+//     // line-height: 1;
+//     margin-block-end: u.rem(10);
+//   }
+//   &__description {
+//     margin-block-end: 0;
+//     max-width: 50ch;
+//   }
+
+  
+// }
