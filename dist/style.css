@@ -75,6 +75,8 @@ footer ul li {
   --text-light: hsla(0, 0%, 100%, 1);
   --text-link-hover: hsla(320, 85%, 41%, 1);
   --header-bg: hsla(232, 58%, 55%, 1);
+  --link-gradient1: hsla(180, 100%, 42%, 1);
+  --link-gradient2: hsla(50, 99%, 53%, 1);
   --hero-bg: hsla(232, 58%, 55%, 1);
   --button-primary-bg: hsla(180, 100%, 42%, 1);
   --button-primary-bg-hover: hsla(180, 100%, 37%, 1);
@@ -258,10 +260,17 @@ a:active {
     font-size: 1rem;
   }
 }
-.topnav__link:hover {
-  text-decoration: underline;
-  text-decoration-thickness: 2px;
-  text-underline-offset: 4px;
+.topnav__link::after {
+  content: "";
+  display: block;
+  height: 3px;
+  margin-top: 3px;
+  background-image: linear-gradient(to right, var(--link-gradient1), var(--link-gradient2) 80%);
+  opacity: 0;
+  transition: opacity 250ms ease-in-out;
+}
+.topnav__link:hover::after {
+  opacity: 1;
 }
 
 .hero {

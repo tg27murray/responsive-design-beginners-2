@@ -50,10 +50,24 @@
     @include u.breakpoint(large) {
       font-size: u.rem(16);
     }
-    &:hover {
-      text-decoration: underline;
-      text-decoration-thickness: 2px;
-      text-underline-offset: 4px;
+
+    &::after {
+      content: '';
+
+      display: block;
+      height: 3px;
+      margin-top: 3px;
+      background-image: linear-gradient(
+        to right,
+        var(--link-gradient1),
+        var(--link-gradient2) 80%
+      );
+      opacity: 0;
+      transition: opacity 250ms ease-in-out;
+    }
+
+    &:hover::after {
+      opacity: 1;
     }
   }
 }
