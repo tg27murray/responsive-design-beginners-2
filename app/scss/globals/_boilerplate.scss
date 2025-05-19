@@ -25,6 +25,20 @@ img {
   width: 100%;
   height: auto;
 }
+
+figure,
+blockquote {
+  margin: 0;
+}
+header ul,
+footer ul {
+  margin: 0;
+  padding: 0;
+  li {
+    list-style-type: none;
+  }
+}
+
 .visually-hidden {
   position: absolute;
   left: -10000px;
@@ -40,5 +54,11 @@ img {
     background: #fff;
     padding: 0.5rem;
     border: 1px solid;
+  }
+}
+
+.hover-fade {
+  &:hover {
+    opacity: 0.9;
   }
 }

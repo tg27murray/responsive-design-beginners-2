@@ -22,6 +22,15 @@
       background-color: var(--button-primary-bg-hover);
       border-color: var(--button-primary-bg-hover);
     }
+
+    &.white {
+      background-color: var(--button-primary-white-bg);
+      border: u.rem(2) solid var(--button-primary-white-bg);
+      &:hover {
+        background-color: var(--button-primary-white-bg-hover);
+        border: u.rem(2) solid var(--button-primary-white-bg-hover);
+      }
+    }
   }
   &.secondary {
     color: var(--button-secondary-bg);
@@ -31,5 +40,10 @@
       color: var(--button-secondary-text-hover);
       background-color: var(--button-secondary-bg-hover);
     }
+  }
+
+  &.cta {
+    background-color: var(--button-cta-bg);
+    color: var(--button-primary-text);
   }
 }

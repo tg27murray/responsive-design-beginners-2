@@ -1,12 +1,16 @@
 :root {
   --moin-bg: hsl(0, 0%, 100%);
-  --text-dark: hsl(233, 14%, 25%);
-  --text-light: hsl(0, 0%, 100%);
-
+  --text-dark: hsla(233, 14%, 25%, 1);
+  --text-light: hsla(0, 0%, 100%, 1);
+  --text-link-hover: hsla(320, 85%, 41%, 1);
   --header-bg: hsla(232, 58%, 55%, 1);
   --hero-bg: hsla(232, 58%, 55%, 1);
   --button-primary-bg: hsla(180, 100%, 42%, 1);
   --button-primary-bg-hover: hsla(180, 100%, 37%, 1);
+
+  --button-primary-white-bg: hsla(0, 0%, 100%, 1);
+  --button-primary-white-bg-hover: hsla(0, 0%, 100%, 90%);
+
   --button-primary-text: hsla(233, 14%, 25%, 1);
   --button-secondary-bg: transparent;
   --button-secondary-bg-hover: hsla(0, 0%, 100%, 1);
@@ -14,7 +18,13 @@
   --button-secondary-border: hsla(0, 0%, 100%, 1);
   --button-secondary-text: hsla(0, 0%, 100%, 1);
   --button-secondary-text-hover: var(--hero-bg);
+
+  --button-cta-bg: hsla(0, 0%, 100%, 1);
   --fullwidth-bg: hsla(320, 85%, 41%, 1);
+
+  --cta-1: hsla(233, 14%, 25%, 1);
+  --cta-2: hsla(232, 58%, 55%, 1);
+  --cta-3: hsl(180, 100%, 42%, 1);
 }
 
 .green {

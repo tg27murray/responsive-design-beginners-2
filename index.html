@@ -6,12 +6,12 @@
     <title>Mythos</title>
     <!-- <script src="/app/js/script.js"></script>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&display=swap"
-      rel="stylesheet"
-    /> -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&display=swap"
+rel="stylesheet"
+/> -->
     <link rel="stylesheet" href="/dist/style.css" />
     <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -24,7 +24,7 @@
     <header class="topnav">
       <h2 class="visually-hidden">Header</h2>
       <div class="wrapper topnav__wrapper">
-        <a href="/" class="topnav__homelink">
+        <a href="/" class="topnav__homelink hover-fade">
           <img
             src="./app/img/logo-mythos.svg"
             alt=""
@@ -119,16 +119,201 @@
             </div>
           </div>
         </section>
-        <section class="feature">
+        <section class="feature fullwidth">
           <div class="wrapper feature__wrapper">
-            <h2 class="feature__title">Angel investment matching in real time.</h2>
-            <p class="feature__description medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id vestibulum 
-              metus, ut pretium lacus. Phasellus ac mi magna. Sed scelerisque, turpis vitae.</p>
-              <img src="./app/img/laptop-dashboard.svg" width="792" height="465" alt="open laptop showing a dashboard on the screen" class="feature__image">
+            <h2 class="feature__title">
+              Angel investment matching in real time.
+            </h2>
+            <p class="feature__description fullwidth__description medium">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id
+              vestibulum metus, ut pretium lacus. Phasellus ac mi magna. Sed
+              scelerisque, turpis vitae.
+            </p>
+            <img
+              src="./app/img/laptop-dashboard.svg"
+              width="792"
+              height="465"
+              alt="open laptop showing a dashboard on the screen"
+              class="feature__image"
+            />
+          </div>
+        </section>
+        <section class="testimonial">
+          <h2 class="visually-hidden">Testimonial</h2>
+          <div class="wrapper testimonial__wrapper">
+            <figure>
+              <img
+                class="testimonial__icon"
+                src="./app/img/quotation-mark-teal.svg"
+                width="78"
+                height="66"
+                alt=""
+              />
+              <blockquote>
+                <p class="testimonial__quote">
+                  When I first started Evermindly, it was a bootstrapped
+                  business. However, we were quickly running out of money.
+                  Thanks to Mythos, we were matched with investors for our seed
+                  funding and have now secured a Series A round!
+                </p>
+              </blockquote>
+              <div class="testimonial__author-wrapper">
+                <img
+                  class="testimonial__author"
+                  src="/app/img/author-1x.jpg"
+                  alt="Janice Hsu - headshot of Janice"
+                  srcset="/app/img/author-2x.jpg 2x, /app/img/author-3x.jpg 3x"
+                />
+                <figcaption class="testimonial_author-caption">
+                  <p class="testimonial__author-description medium">
+                    Janice Hsu<br />
+                    Founder and CEO, Evermindly
+                  </p>
+                </figcaption>
+              </div>
+            </figure>
+          </div>
+        </section>
+        <section class="fw-cta fullwidth">
+          <div class="wrapper fw-cta__wrapper">
+            <h2 class="fw-cta__title">Get started with Mythos today</h2>
+            <p class="fw-cta__description fullwidth__description large">
+              Find the next undiscovered unicorn with a free 14-day trial.
+            </p>
+            <a href="" class="fw-cta__button button primary white"
+              >Free Trial</a
+            >
           </div>
         </section>
       </article>
     </main>
-    <footer></footer>
+    <footer class="footer">
+      <h2 class="visually-hidden">Footer</h2>
+      <div class="wrapper footer__wrapper">
+        <section class="footer__logo">
+          <a href="/" class="footer__homelink hover-fade">
+            <img
+              src="./app/img/logo-mythos-dark.svg"
+              alt=""
+              width="128"
+              height="36"
+              class="footer__logo-image"
+            />
+          </a>
+          <p class="footer__copyright medium">© 2023 Mythos, LLC</p>
+        </section>
+        <section class="footer__column">
+          <h3 class="footer__column-title">Company</h3>
+          <ul class="footer__links">
+            <li class="footer__item">
+              <a class="footer__link" href="">About</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="">News & Press</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="">Careers</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="">Contact</a>
+            </li>
+          </ul>
+        </section>
+        <section class="footer__column">
+          <h3 class="footer__column-title">Support</h3>
+          <ul class="footer__links">
+            <li class="footer__item">
+              <a class="footer__link" href="">Customer Support</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="">Community Forum</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="">Knowledge Base</a>
+            </li>
+          </ul>
+        </section>
+        <section class="footer__column">
+          <h3 class="footer__column-title">Follow</h3>
+          <ul class="footer__links">
+            <li class="footer__item">
+              <a class="footer__link" href=""
+                ><svg
+                  class="footer__social"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 448 512"
+                >
+                  <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                  <path
+                    class="footer__social-path"
+                    d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm297.1 84L257.3 234.6 379.4 396H283.8L209 298.1 123.3 396H75.8l111-126.9L69.7 116h98l67.7 89.5L313.6 116h47.5zM323.3 367.6L153.4 142.9H125.1L296.9 367.6h26.3z"
+                  />
+                </svg>
+                Twitter</a
+              >
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href=""
+                ><svg
+                  class="footer__social"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 448 512"
+                >
+                  <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                  <path
+                    class="footer__social-path"
+                    d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64h98.2V334.2H109.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H255V480H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64z"
+                  />
+                </svg>
+                Facebook</a
+              >
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="">
+                <svg
+                  class="footer__social"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 448 512"
+                >
+                  <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                  <path
+                    class="footer__social-path"
+                    d="M194.4 211.7a53.3 53.3 0 1 0 59.3 88.7 53.3 53.3 0 1 0 -59.3-88.7zm142.3-68.4c-5.2-5.2-11.5-9.3-18.4-12c-18.1-7.1-57.6-6.8-83.1-6.5c-4.1 0-7.9 .1-11.2 .1c-3.3 0-7.2 0-11.4-.1c-25.5-.3-64.8-.7-82.9 6.5c-6.9 2.7-13.1 6.8-18.4 12s-9.3 11.5-12 18.4c-7.1 18.1-6.7 57.7-6.5 83.2c0 4.1 .1 7.9 .1 11.1s0 7-.1 11.1c-.2 25.5-.6 65.1 6.5 83.2c2.7 6.9 6.8 13.1 12 18.4s11.5 9.3 18.4 12c18.1 7.1 57.6 6.8 83.1 6.5c4.1 0 7.9-.1 11.2-.1c3.3 0 7.2 0 11.4 .1c25.5 .3 64.8 .7 82.9-6.5c6.9-2.7 13.1-6.8 18.4-12s9.3-11.5 12-18.4c7.2-18 6.8-57.4 6.5-83c0-4.2-.1-8.1-.1-11.4s0-7.1 .1-11.4c.3-25.5 .7-64.9-6.5-83l0 0c-2.7-6.9-6.8-13.1-12-18.4zm-67.1 44.5A82 82 0 1 1 178.4 324.2a82 82 0 1 1 91.1-136.4zm29.2-1.3c-3.1-2.1-5.6-5.1-7.1-8.6s-1.8-7.3-1.1-11.1s2.6-7.1 5.2-9.8s6.1-4.5 9.8-5.2s7.6-.4 11.1 1.1s6.5 3.9 8.6 7s3.2 6.8 3.2 10.6c0 2.5-.5 5-1.4 7.3s-2.4 4.4-4.1 6.2s-3.9 3.2-6.2 4.2s-4.8 1.5-7.3 1.5l0 0c-3.8 0-7.5-1.1-10.6-3.2zM448 96c0-35.3-28.7-64-64-64H64C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96zM357 389c-18.7 18.7-41.4 24.6-67 25.9c-26.4 1.5-105.6 1.5-132 0c-25.6-1.3-48.3-7.2-67-25.9s-24.6-41.4-25.8-67c-1.5-26.4-1.5-105.6 0-132c1.3-25.6 7.1-48.3 25.8-67s41.5-24.6 67-25.8c26.4-1.5 105.6-1.5 132 0c25.6 1.3 48.3 7.1 67 25.8s24.6 41.4 25.8 67c1.5 26.3 1.5 105.4 0 131.9c-1.3 25.6-7.1 48.3-25.8 67z"
+                  />
+                </svg>
+                Instagram</a
+              >
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="">
+                <svg
+                  class="footer__social"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 448 512"
+                >
+                  <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                  <path
+                    class="footer__social-path"
+                    d="M282 256.2l-95.2-54.1V310.3L282 256.2zM384 32H64C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64zm14.4 136.1c7.6 28.6 7.6 88.2 7.6 88.2s0 59.6-7.6 88.1c-4.2 15.8-16.5 27.7-32.2 31.9C337.9 384 224 384 224 384s-113.9 0-142.2-7.6c-15.7-4.2-28-16.1-32.2-31.9C42 315.9 42 256.3 42 256.3s0-59.7 7.6-88.2c4.2-15.8 16.5-28.2 32.2-32.4C110.1 128 224 128 224 128s113.9 0 142.2 7.7c15.7 4.2 28 16.6 32.2 32.4z"
+                  />
+                </svg>
+                Youtube</a
+              >
+            </li>
+          </ul>
+        </section>
+        <section class="footer__column">
+          <h3 class="footer__column-title">Resources</h3>
+          <ul class="footer__links">
+            <li class="footer__item">
+              <a class="footer__link" href="">Privacy Policy</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="">Terms of Use</a>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </footer>
   </body>
 </html>
