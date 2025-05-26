@@ -7,15 +7,14 @@
     justify-content: center;
     gap: 40px;
 
-    @include u.breakpoint(large){
+    @include u.breakpoint(large) {
       gap: 5.5%;
     }
-
   }
 
   &__item {
     text-align: center;
-    @include u.breakpoint(large){
+    @include u.breakpoint(large) {
       flex: 1;
       text-align: start;
     }
@@ -26,13 +25,9 @@
 
     width: auto;
     margin-block-end: 10px;
-    @include u.breakpoint-down(medium){
+    @include u.breakpoint-down(medium) {
       margin-inline: auto;
     }
-  }
-
-  &__title {
-    margin-block-end: u.rem(10);
   }
 
   &__description {
@@ -79,8 +74,6 @@
 //     }
 //   }
 
-
-
 //   &__icon {
 //     width: auto;
 //     height: u.rem(48);
@@ -100,5 +93,4 @@
 //     max-width: 50ch;
 //   }
 
-  
 // }

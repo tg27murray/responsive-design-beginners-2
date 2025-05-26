@@ -1,17 +1,42 @@
 @use '../util' as u;
 
 .testimonial {
+  $b: &;
   &__wrapper {
     max-width: 800px;
   }
-
+  figure {
+    position: relative;
+  }
   &__icon {
     width: 16%;
     max-width: u.rem(78);
     margin-block-end: 1.25rem;
     margin-block-end: clamp(u.rem(20), 0.68rem + 2.42vw, u.rem(40));
-  }
 
+    @include u.breakpoint-down(large) {
+      &:nth-child(3) {
+        display: none;
+      }
+    }
+    @include u.breakpoint(x-large) {
+      position: absolute;
+      &:first-child {
+        // position: absolute;
+        // background-color: black;
+        translate: calc(-100% - 40px) -30px;
+      }
+
+      &:nth-child(3) {
+        // outline: 2px solid red;
+        rotate: 180deg;
+        // right: 0;
+        //top: -100%;
+        left: calc(100% + 40px);
+        translate: 0 calc(-10px - 100%);
+      }
+    }
+  }
   &__quote {
     font-weight: 700;
     font-size: 1.5rem;
