@@ -27,6 +27,11 @@ body {
   margin-block-end: 50vh;
 }
 
+input,
+button {
+  font-family: myFirstFont;
+}
+
 img {
   display: block;
   width: 100%;
@@ -219,6 +224,18 @@ a:active {
   margin-inline: auto;
 }
 
+.form__label, .form__text {
+  font-size: 1.125rem;
+  line-height: 1;
+}
+.form__label {
+  font-weight: 700;
+}
+.form__text {
+  border: none;
+  border-radius: 5px;
+  padding: 0.75rem 1.25rem;
+}
 .wrapper {
   width: min(100% - 3rem, 75rem);
   margin-inline: auto;
@@ -488,6 +505,42 @@ a:active {
     background: linear-gradient(90deg, var(--cta-1), var(--cta-2) 55%, var(--cta-3) 110%);
   }
 }
+.fw-cta__form {
+  display: grid;
+  grid-template-areas: "label" "text" "button";
+  max-width: 21.875rem;
+  margin-inline: auto;
+}
+@media (min-width: 43.75em) {
+  .fw-cta__form {
+    grid-template-areas: "label label" "text button";
+    justify-content: center;
+  }
+}
+.fw-cta__label {
+  grid-area: label;
+  justify-self: start;
+  margin-block-end: 12px;
+}
+.fw-cta__text {
+  grid-area: text;
+}
+@media (max-width: 43.74875em) {
+  .fw-cta__text {
+    margin-block-end: 20px;
+  }
+}
+@media (min-width: 43.75em) {
+  .fw-cta__text {
+    margin-inline-end: 20px;
+    width: 18.75rem;
+  }
+}
+.fw-cta__button {
+  grid-area: button;
+  justify-self: center;
+}
+
 .footer__wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);

@@ -303,11 +303,24 @@ rel="stylesheet"
           <div class="wrapper fw-cta__wrapper">
             <h2 class="fw-cta__title">Get started with Mythos today</h2>
             <p class="fw-cta__description fullwidth__description large">
-              Find the next undiscovered unicorn with a free 14-day trial.
+              Contact us to find the next undiscovered unicorn.
             </p>
-            <a href="" class="fw-cta__button button primary white"
-              >Free Trial</a
-            >
+            <form class="form fw-cta__form">
+              <label class="form__label fw-cta__label" for="txtEmail"
+                >Email address</label
+              >
+              <input
+                class="form__text fw-cta__text"
+                type="email"
+                name="email"
+                id="txtEmail"
+                required
+                placeholder="test@test.com"
+              />
+              <button type="submit" class="fw-cta__button button primary white">
+                Contact
+              </button>
+            </form>
           </div>
         </section>
       </article>

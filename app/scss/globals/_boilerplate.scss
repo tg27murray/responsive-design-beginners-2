@@ -19,6 +19,10 @@ body {
   color: var(--text-dark);
   margin-block-end: 50vh; //temporary, remove after website is complete
 }
+input,
+button {
+  font-family: u.$font;
+}
 
 img {
   display: block;
