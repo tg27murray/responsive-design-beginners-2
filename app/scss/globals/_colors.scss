@@ -1,10 +1,12 @@
 :root {
-  --moin-bg: hsl(0, 0%, 100%);
+  --main-bg: hsl(0, 0%, 100%);
   --text-dark: hsla(233, 14%, 25%, 1);
   --text-light: hsla(0, 0%, 100%, 1);
   --text-link-hover: hsla(320, 85%, 41%, 1);
   --header-bg: hsla(232, 58%, 55%, 1);
 
+  --menu-shadow: hsla(232, 58%, 35%, 60%);
+  --menu-overlay: hsla(233, 14%, 25%, 40%);
   --link-gradient1: hsla(180, 100%, 42%, 1);
   --link-gradient2: hsla(50, 99%, 53%, 1);
   --hero-bg: hsla(232, 58%, 55%, 1);
